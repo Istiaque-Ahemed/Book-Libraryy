@@ -1,7 +1,16 @@
 .form{
     margin:30px 0 0 280px;
 }
-.card-sytyle{
-    display: flex;
-    
+.card{
+    height: 500px;
+    width: 280px;
+    margin-bottom: 10px;
+}
+.card img{
+    width: 278px;
+    height: 280px;
+}
+#text-success{
+    color: #5cb85c;
+    font-weight: bold;
 }
