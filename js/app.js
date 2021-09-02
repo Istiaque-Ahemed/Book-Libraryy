@@ -56,8 +56,8 @@ const displayData = (data) => {
         <div  class="card h-40">
         <img id="img" class="card-img-top" src="https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg" />
         <div class="card-body">
-            <h5 class="card-text"><b id="text-success">Book Name: </b>${item.title.slice(0,30)}</h5>
-            <p class="card-text"><b id="text-success">Book Author: </b> ${item.author_name.slice(0,30)}</p>
+            <h5 class="card-text"><b id="text-success">Book Name: </b>${item.title}</h5>
+            <p class="card-text"><b id="text-success">Book Author: </b> ${item.author_name}</p>
             <p class="card-text"><b id="text-success">Book 1st publish year: </b> ${item.first_publish_year}</p>
         </div>
     </div>
