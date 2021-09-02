@@ -1,16 +1,53 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-image: linear-gradient(rgb(142 130 130 / 52%),rgb(23 20 20)) ,url(/img/nicebook.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .form{
     margin:30px 0 0 280px;
+
+}
+.quo{
+    margin-left: 26em;
+    color: #00dcff;
+}
+#input-field {
+    margin-top: 2em;
+
+}
+#button{
+    margin-top: 2em;
+
 }
 .card{
-    height: 500px;
-    width: 280px;
+    
+    height: 450px;
+    width: 320px;
+    margin: 20px;
     margin-bottom: 10px;
+    box-shadow: 0px 14px 17px -1px gray;
 }
 .card img{
-    width: 278px;
+    width: 318px;
     height: 280px;
 }
 #text-success{
     color: #5cb85c;
+    font-size: bold;
+}
+#error{
+    width: 40%;
+    margin-left: 319px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 34px;
+    color: white;
     font-weight: bold;
+    background-color: #e6001fa1;
 }
