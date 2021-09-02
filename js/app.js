@@ -5,7 +5,7 @@ const getData = () => {
     const inputValue = inputField.value;
     inputField.value ="";
     // ******convate to data json fille
-    fetch(`http://openlibrary.org/search.json?q=${inputValue}`)
+    fetch(`https://openlibrary.org/search.json?q=${inputValue}`)
         .then(res => res.json())
         .then(data => displayData(data.docs))
 
