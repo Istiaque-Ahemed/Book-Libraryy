@@ -1,21 +1,19 @@
-
+//********OnClick Function 
 const getData = () => {
 
     const inputField = document.getElementById('input-field')
     const inputValue = inputField.value;
     inputField.value ="";
-
+    // ******convate to data json fille
     fetch(`http://openlibrary.org/search.json?q=${inputValue}`)
         .then(res => res.json())
         .then(data => displayData(data.docs))
 
 }
 
-
+//********* display  Data function 
 
 const displayData = (data) => {
-
-
 
     const containerDiv = document.getElementById('search-result');
 
@@ -30,6 +28,7 @@ const displayData = (data) => {
 
     let count = Object.keys(data).length
     
+    //******* Error handle 
     if (inputValues === 'null') {
         errorDiv.innerText = "Search field cannot be empty"
     } 
@@ -45,6 +44,9 @@ const displayData = (data) => {
 
     // clear dom 
     containerDiv.innerHTML = '';
+
+    // Show Data in ui 
+    
     data.forEach(item => {
         this.count++;
         const div = document.createElement('div');

@@ -14,33 +14,36 @@
 </head>
 
 <body>
-    <div class="hader">
-    </div>
+    <!--***** main start ***** -->
     <main>
 
         <div class="container">
+            <!--***** Input and quote *****-->
             <h1 class="text-center text-light pt-5">Search your favorite book</h1>
             <small class="quo">“A room without books is like a body without a soul.” – ...</small>
+            <!--***** Input And Buttton ***** -->
+            <div class="input-group mb-3 w-50 form">
+                <input id="input-field" type="text" class="form-control rounded" placeholder="Search Book Name">
+                <button onclick="getData()" class="btn btn-outline-secondary btn-danger text-light ms-1 rounded danger"
+                    type="button" id="button">Search</button>
+            </div>
+            <!--***** error show ***** -->
+            <div id="error">
 
-                <div class="input-group mb-3 w-50 form">
-                    <input id="input-field" type="text" class="form-control rounded" placeholder="Search Book Name">
-                    <button onclick="getData()"
-                        class="btn btn-outline-secondary btn-danger text-light ms-1 rounded danger" type="button"
-                        id="button">Search</button>
-                </div>
-                <div id="error">
+            </div>
+            <!--***** cards group ***** -->
 
-                </div>
-                <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
 
 
-                </div>
+            </div>
 
         </div>
 
 
 
     </main>
+    <!--***** main end *****-->
 
 
     <script src="/js/app.js"></script>
